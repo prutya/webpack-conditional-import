@@ -1,0 +1,11 @@
+#!/bin/sh
+
+export NODE_ENV='production'
+export APP_ENV='production'
+
+if test -z "$APP_VERSION"; then
+  export APP_VERSION=$APP_VERSION
+fi
+
+./node_modules/.bin/webpack \
+  -p
